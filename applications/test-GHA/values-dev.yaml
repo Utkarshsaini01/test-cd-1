@@ -1,0 +1,3 @@
+application:
+  env:
+    HELLO_TEST_GHA: "dev"

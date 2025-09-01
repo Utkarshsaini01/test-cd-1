@@ -1,0 +1,9 @@
+config:
+  helm_chart: test-deployment
+
+application:
+  name: test-gha
+  resources:
+    request:
+      cpu: 300m
+      memory: 200mi
