@@ -1,0 +1,9 @@
+config:
+  helm_chart: test-deployment
+
+application:
+  name: myapp
+  resources:
+    request:
+      cpu: 300m
+      memory: 200mi
