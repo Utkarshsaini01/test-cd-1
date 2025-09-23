@@ -17,11 +17,11 @@ def replace_variations(text: str, old: str, new: str) -> str:
 
 def generate_app(app_name: str, envs: list[str]):
     base_app = "test-one"
-    base_dir = Path("applications") / base_app
+    base_dir = Path("../applications") / base_app
     if not base_dir.exists():
         raise FileNotFoundError(f"Base app {base_app} not found under applications/")
 
-    target_dir = Path("applications") / app_name
+    target_dir = Path("../applications") / app_name
     target_dir.mkdir(parents=True, exist_ok=True)
 
     # Always copy values.yaml
